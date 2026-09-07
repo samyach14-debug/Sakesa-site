@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact — Sakesa</title>
+    <meta
+      name="description"
+      content="Neem contact op met Sakesa voor een vrijblijvend gesprek over een website voor jouw zaak. Reactie binnen één werkdag."
+    />
+    <meta name="theme-color" content="#1B365D" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="canonical" href="https://sakesa.nl/contact.html" />
+    <!-- TODO: vervang de canonical-URL door je echte domein -->
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Contact — Sakesa" />
+    <meta
+      property="og:description"
+      content="Een vrijblijvend gesprek over wat een website voor jouw zaak kan doen."
+    />
+    <meta property="og:locale" content="nl_NL" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,500&family=Outfit:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#hoofdinhoud">Ga naar inhoud</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="index.html" aria-label="Sakesa, naar home">
+          <span class="logo-mark" aria-hidden="true"></span>
+          Sakesa
+        </a>
+
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="hoofdmenu"
+          aria-label="Menu openen"
+        >
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="site-nav" id="hoofdmenu" aria-label="Hoofdnavigatie">
+          <ul>
+            <li><a href="index.html#voor-wie">Voor wie</a></li>
+            <li><a href="index.html#diensten">Diensten</a></li>
+            <li><a href="index.html#werkwijze">Werkwijze</a></li>
+            <li><a href="index.html#werk">Werk</a></li>
+            <li><a href="contact.html" aria-current="page">Contact</a></li>
+          </ul>
+          <a class="btn btn-nav" href="contact.html">Gratis gesprek</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="hoofdinhoud" class="contact-page">
+      <section class="page-intro" aria-labelledby="contact-titel">
+        <div class="container">
+          <p class="eyebrow">Contact</p>
+          <h1 id="contact-titel">Neem contact op</h1>
+          <p class="lede">
+            Een vrijblijvend gesprek is vaak genoeg om te weten of een website
+            zin heeft. Geen verkooppraatje — gewoon kijken wat jouw zaak nodig heeft.
+          </p>
+        </div>
+      </section>
+
+      <section class="section contact-panel" aria-label="Formulier en gegevens">
+        <div class="container contact-grid">
+          <div class="contact-form-wrap">
+            <form class="contact-form" id="contactformulier" novalidate>
+              <div class="field-row">
+                <div class="field">
+                  <label for="naam">Naam</label>
+                  <input id="naam" name="naam" type="text" autocomplete="name" required />
+                  <p class="field-error" data-for="naam" hidden></p>
+                </div>
+
+                <div class="field">
+                  <label for="email">E-mailadres</label>
+                  <input id="email" name="email" type="email" autocomplete="email" required />
+                  <p class="field-error" data-for="email" hidden></p>
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="telefoon">Telefoonnummer <span class="optional">(niet verplicht)</span></label>
+                <input id="telefoon" name="telefoon" type="tel" autocomplete="tel" />
+                <p class="field-error" data-for="telefoon" hidden></p>
+              </div>
+
+              <div class="field">
+                <label for="bericht">Bericht / omschrijving</label>
+                <textarea
+                  id="bericht"
+                  name="bericht"
+                  rows="6"
+                  required
+                  placeholder="Vertel kort over je zaak en wat je zoekt."
+                ></textarea>
+                <p class="field-error" data-for="bericht" hidden></p>
+              </div>
+
+              <button class="btn btn-primary btn-full" type="submit">Verstuur bericht</button>
+
+              <!--
+                TODO: koppel hier je verzendlogica.
+                Voorbeelden: Formspree, Netlify Forms, Web3Forms of een eigen backend.
+                Tot die tijd wordt het formulier alleen client-side gevalideerd
+                en niet daadwerkelijk verstuurd.
+              -->
+            </form>
+
+            <div class="form-success" id="form-success" hidden tabindex="-1">
+              <p class="eyebrow">Bedankt</p>
+              <h2>Ik lees het en kom erop terug.</h2>
+              <p>
+                Meestal binnen één werkdag. Liever meteen schakelen? Mail of bel
+                via de gegevens op deze pagina.
+              </p>
+            </div>
+          </div>
+
+          <aside class="contact-aside">
+            <p class="aside-lead">Of mail of bel direct.</p>
+            <dl class="contact-facts">
+              <!-- TODO: vul je echte contactgegevens in -->
+              <div>
+                <dt>E-mail</dt>
+                <dd><a href="mailto:hallo@sakesa.nl">hallo@sakesa.nl</a></dd>
+              </div>
+              <div>
+                <dt>Telefoon</dt>
+                <dd><a href="tel:+31600000000">06 00 00 00 00</a></dd>
+              </div>
+              <div>
+                <dt>Bereikbaar</dt>
+                <dd>Ma–vr, 09:00–17:30</dd>
+              </div>
+              <div>
+                <dt>KvK</dt>
+                <dd>00000000</dd>
+                <!-- TODO: KvK-nummer invullen -->
+              </div>
+            </dl>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <p class="footer-brand">Sakesa</p>
+          <p>Websites voor lokale ondernemers.</p>
+        </div>
+
+        <div>
+          <p class="footer-label">Contact</p>
+          <!-- TODO: vul je echte gegevens in -->
+          <p><a href="mailto:hallo@sakesa.nl">hallo@sakesa.nl</a></p>
+          <p><a href="tel:+31600000000">06 00 00 00 00</a></p>
+          <p>KvK: 00000000</p>
+          <!-- TODO: KvK-nummer invullen -->
+        </div>
+
+        <div>
+          <p class="footer-label">Juridisch</p>
+          <p><a href="privacy.html">Privacyverklaring</a></p>
+          <p><a href="voorwaarden.html">Algemene voorwaarden</a></p>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <p>© <span id="jaar"></span> Sakesa. Alle rechten voorbehouden.</p>
+      </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
