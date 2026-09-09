@@ -57,6 +57,7 @@
             <li><a href="#diensten">Diensten</a></li>
             <li><a href="#werkwijze">Werkwijze</a></li>
             <li><a href="#werk">Werk</a></li>
+            <li><a href="#faq">Vragen</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
           <a class="btn btn-nav" href="contact.html">Gratis gesprek</a>
@@ -98,6 +99,16 @@
           </aside>
         </div>
       </section>
+
+      <div class="trust">
+        <div class="container">
+          <ul class="trust-list">
+            <li>Reactie binnen 1 werkdag</li>
+            <li>Vaste prijs vooraf</li>
+            <li>Geen verborgen kosten</li>
+          </ul>
+        </div>
+      </div>
 
       <section class="section why" id="voor-wie" aria-labelledby="voor-wie-titel">
         <div class="container why-grid">
@@ -163,7 +174,7 @@
                 <li>SEO-basis</li>
               </ul>
               <!-- TODO: pas de vanaf-prijs hieronder aan -->
-              <p class="price">Vanaf <strong>€795</strong></p>
+              <p class="price">Vanaf <strong>€299</strong></p>
             </article>
 
             <article class="service-card service-card-alt">
@@ -181,7 +192,7 @@
                 <li>Maandelijks opzegbaar</li>
               </ul>
               <!-- TODO: pas de maandprijs hieronder aan -->
-              <p class="price">Vanaf <strong>€29</strong> / maand</p>
+              <p class="price">Vanaf <strong>€15</strong> / maand</p>
             </article>
           </div>
         </div>
@@ -224,7 +235,8 @@
               <h3>Livegang</h3>
               <p>
                 Domein, formulier, klaar. Daarna kun je optioneel onderhoud
-                afnemen — of de site zelf houden.
+                afnemen — of de site zelf houden. Na livegang blijf ik bereikbaar
+                voor vragen; kleine haperingen los ik snel op.
               </p>
             </li>
           </ol>
@@ -235,50 +247,175 @@
         <div class="container">
           <div class="section-head">
             <p class="eyebrow">Werk</p>
-            <h2 id="werk-titel">Voorbeelden komen hier.</h2>
+            <h2 id="werk-titel">Recent gebouwd.</h2>
             <p class="section-lead">
-              Deze plek vult zich met echte projecten. Tot die tijd: zo komt
-              een case eruit te zien.
+              Twee sites die live staan. De derde plek is voor de volgende.
             </p>
           </div>
 
           <div class="work-grid">
-            <!-- TODO: vervang deze placeholder-kaarten door echte projecten -->
             <article class="work-card">
-              <div class="work-visual" role="img" aria-label="Placeholderafbeelding project 1">
-                <span>Foto volgt</span>
-                <!-- TODO: eigen foto plaatsen -->
+              <div class="work-visual">
+                <img
+                  src="images/Consultancy.jpeg"
+                  alt="Consultancywebsite met donkerblauwe header en een overzicht van praktijkcases"
+                  width="800"
+                  height="500"
+                  loading="lazy"
+                />
               </div>
               <div class="work-body">
-                <p class="work-meta">Branche · Plaats</p>
-                <h3>Projectnaam</h3>
-                <p>Korte zin over wat er gebouwd is en wat het opleverde.</p>
+                <!-- TODO: pas branche, plaats en naam aan als die afwijken -->
+                <p class="work-meta">Advies · Nederland</p>
+                <h3>Consultancy</h3>
+                <p>Een heldere cases-pagina, zodat opdrachtgevers meteen zien hoe je werkt.</p>
               </div>
             </article>
 
             <article class="work-card">
-              <div class="work-visual" role="img" aria-label="Placeholderafbeelding project 2">
-                <span>Foto volgt</span>
-                <!-- TODO: eigen foto plaatsen -->
+              <div class="work-visual">
+                <img
+                  src="images/Stichting.jpeg"
+                  alt="Website van Stichting Al-Wahhaab met missietekst en een foto van hulplevering in Marokko"
+                  width="800"
+                  height="500"
+                  loading="lazy"
+                />
               </div>
               <div class="work-body">
-                <p class="work-meta">Branche · Plaats</p>
-                <h3>Projectnaam</h3>
-                <p>Korte zin over wat er gebouwd is en wat het opleverde.</p>
+                <p class="work-meta">Goede doelen · Breda</p>
+                <h3>Stichting Al-Wahhaab</h3>
+                <p>Een rustige site voor een Bredase stichting die hulp biedt in Marokko.</p>
               </div>
             </article>
 
-            <article class="work-card">
-              <div class="work-visual" role="img" aria-label="Placeholderafbeelding project 3">
-                <span>Foto volgt</span>
-                <!-- TODO: eigen foto plaatsen -->
+            <article class="work-card work-card-invite">
+              <div class="work-visual work-visual-invite">
+                <p>Jouw zaak.</p>
               </div>
               <div class="work-body">
-                <p class="work-meta">Branche · Plaats</p>
-                <h3>Projectnaam</h3>
-                <p>Korte zin over wat er gebouwd is en wat het opleverde.</p>
+                <p class="work-meta">Volgende project</p>
+                <h3>Binnenkort: jouw zaak hier?</h3>
+                <p>Een simpele, professionele site. Geen bureau, geen gedoe.</p>
+                <a class="btn btn-primary" href="contact.html">Neem contact op</a>
               </div>
             </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section faq" id="faq" aria-labelledby="faq-titel">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow">Vragen</p>
+            <h2 id="faq-titel">Dingen die ondernemers vaak vragen.</h2>
+          </div>
+
+          <div class="faq-list">
+            <div class="faq-item">
+              <h3>
+                <button
+                  class="faq-trigger"
+                  type="button"
+                  aria-expanded="false"
+                  aria-controls="faq-panel-1"
+                  id="faq-vraag-1"
+                >
+                  Moet ik zelf iets technisch kunnen?
+                  <span class="faq-chevron" aria-hidden="true"></span>
+                </button>
+              </h3>
+              <div class="faq-panel" id="faq-panel-1" role="region" aria-labelledby="faq-vraag-1" hidden>
+                <p>
+                  Nee. Jij levert teksten en foto’s, ik bouw de site en zet hem
+                  online. Geen accounts, geen ingewikkelde systemen.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <h3>
+                <button
+                  class="faq-trigger"
+                  type="button"
+                  aria-expanded="false"
+                  aria-controls="faq-panel-2"
+                  id="faq-vraag-2"
+                >
+                  Wat als ik later van tekst of foto’s wil wisselen?
+                  <span class="faq-chevron" aria-hidden="true"></span>
+                </button>
+              </h3>
+              <div class="faq-panel" id="faq-panel-2" role="region" aria-labelledby="faq-vraag-2" hidden>
+                <p>
+                  Kleine aanpassingen zitten bij het onderhoudsabonnement. Zonder
+                  abonnement kan het ook — dan reken ik het per keer.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <h3>
+                <button
+                  class="faq-trigger"
+                  type="button"
+                  aria-expanded="false"
+                  aria-controls="faq-panel-3"
+                  id="faq-vraag-3"
+                >
+                  Hoe lang duurt het voordat mijn site live staat?
+                  <span class="faq-chevron" aria-hidden="true"></span>
+                </button>
+              </h3>
+              <div class="faq-panel" id="faq-panel-3" role="region" aria-labelledby="faq-vraag-3" hidden>
+                <p>
+                  Meestal twee tot vier weken, afhankelijk van hoe snel teksten
+                  en foto’s binnen zijn. In de offerte staat een heldere planning.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <h3>
+                <button
+                  class="faq-trigger"
+                  type="button"
+                  aria-expanded="false"
+                  aria-controls="faq-panel-4"
+                  id="faq-vraag-4"
+                >
+                  Kan ik stoppen met het onderhoudsabonnement?
+                  <span class="faq-chevron" aria-hidden="true"></span>
+                </button>
+              </h3>
+              <div class="faq-panel" id="faq-panel-4" role="region" aria-labelledby="faq-vraag-4" hidden>
+                <p>
+                  Ja. Maandelijks opzegbaar, zonder gedoe. Je houdt je site en
+                  je domein. Alleen het bijhouden stopt.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <h3>
+                <button
+                  class="faq-trigger"
+                  type="button"
+                  aria-expanded="false"
+                  aria-controls="faq-panel-5"
+                  id="faq-vraag-5"
+                >
+                  Wat gebeurt er met mijn domeinnaam?
+                  <span class="faq-chevron" aria-hidden="true"></span>
+                </button>
+              </h3>
+              <div class="faq-panel" id="faq-panel-5" role="region" aria-labelledby="faq-vraag-5" hidden>
+                <p>
+                  Die staat op jouw naam. Stop je of gaan we uit elkaar, dan
+                  blijft het domein van jou.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>

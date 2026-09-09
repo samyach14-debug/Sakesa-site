@@ -47,8 +47,20 @@
   onScroll();
   window.addEventListener("scroll", onScroll, { passive: true });
 
+  document.querySelectorAll(".faq-item").forEach((item) => {
+    const trigger = item.querySelector(".faq-trigger");
+    const panel = item.querySelector(".faq-panel");
+    if (!trigger || !panel) return;
+
+    trigger.addEventListener("click", () => {
+      const isOpen = trigger.getAttribute("aria-expanded") === "true";
+      trigger.setAttribute("aria-expanded", String(!isOpen));
+      panel.hidden = isOpen;
+    });
+  });
+
   const revealTargets = document.querySelectorAll(
-    ".service-card, .steps li, .work-card, .why-list li"
+    ".service-card, .steps li, .work-card, .why-list li, .faq-item"
   );
 
   if ("IntersectionObserver" in window) {
