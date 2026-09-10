@@ -1012,8 +1012,45 @@ textarea:focus-visible,
   max-width: 720px;
 }
 
-.legal p {
+.legal h1 {
+  font-size: clamp(2.1rem, 5vw, 3.2rem);
+}
+
+.legal h2 {
+  font-size: 1.35rem;
+  margin: 2.2rem 0 0.7rem;
+}
+
+.legal p,
+.legal li {
   color: var(--muted);
+}
+
+.legal .legal-meta {
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+}
+
+.legal .lede {
+  margin-bottom: 0.35rem;
+}
+
+.legal ul {
+  margin: 0 0 1rem;
+  padding-left: 1.2rem;
+}
+
+.legal li {
+  margin-bottom: 0.45rem;
+}
+
+.legal li:last-child {
+  margin-bottom: 0;
+}
+
+.legal .legal-back {
+  margin-top: 2.5rem;
 }
 
 /* Breakpoints ------------------------------------------------------------ */
