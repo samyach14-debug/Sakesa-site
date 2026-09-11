@@ -52,10 +52,20 @@
     const panel = item.querySelector(".faq-panel");
     if (!trigger || !panel) return;
 
+    panel.setAttribute("inert", "");
+
     trigger.addEventListener("click", () => {
       const isOpen = trigger.getAttribute("aria-expanded") === "true";
-      trigger.setAttribute("aria-expanded", String(!isOpen));
-      panel.hidden = isOpen;
+      const nextOpen = !isOpen;
+
+      trigger.setAttribute("aria-expanded", String(nextOpen));
+      item.classList.toggle("is-open", nextOpen);
+
+      if (nextOpen) {
+        panel.removeAttribute("inert");
+      } else {
+        panel.setAttribute("inert", "");
+      }
     });
   });
 
